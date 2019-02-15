@@ -9,7 +9,7 @@ branches:
   - master
 
 before_script:
-  - npm install -g @angular
+  - npm install -g @angular/cli
 
 script:
 - ng build --prod --base-href https://bingemi.github.io/mango-ui/
