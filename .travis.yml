@@ -13,3 +13,11 @@ before_script:
 
 script:
 - ng build --prod --base-href https://bingemi.github.io/mango-ui/
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/mango-ui
+  on:
+    branch: master
