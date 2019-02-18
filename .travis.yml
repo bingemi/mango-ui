@@ -13,7 +13,7 @@ before_script:
 
 script:
 - ng build --prod --base-href="/mango-ui/"
-- mv dist/mango-ui/index.html dist/mango-ui/404.html
+- cp dist/mango-ui/index.html dist/mango-ui/404.html
 
 deploy:
   provider: pages
