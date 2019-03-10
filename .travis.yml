@@ -8,7 +8,7 @@ before_script:
   - npm install -g @angular/cli
 
 script:
-- ng build --prod --base-href="/mango-ui/"
+- ng build --prod --base-href="/mango-ui/" —-deploy-url="/mango-ui"
 - cp dist/mango-ui/index.html dist/mango-ui/404.html
 
 deploy:
